@@ -8,7 +8,7 @@ project(Learning_LUA)
 set(PUBLIC
         common.h common.c)
 
-foreach(var RANGE 1 3)
+foreach(var RANGE 1 5)
     set(CHAPTER chapter_0${var}.c ${PUBLIC})
     add_executable(chapter_0${var} ${CHAPTER})
     target_link_libraries(chapter_0${var} lua5.2)

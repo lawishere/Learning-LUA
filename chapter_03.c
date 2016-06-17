@@ -27,6 +27,5 @@ int main(int argc, char *argv)
     printf("widt = %d, height = %d\r\n", width, height);
 
     lua_close(L);
-
     return 0;
 }

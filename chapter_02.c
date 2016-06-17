@@ -6,7 +6,8 @@
 #include <lua5.2/lualib.h>
 #include "common.h"
 
-int main (void) {
+int main (int argc, char *argv[]) {
+  
     lua_State *L = luaL_newstate();
 
     lua_pushboolean(L, 1);
@@ -38,5 +39,6 @@ int main (void) {
     /* true  */
 
     lua_close(L);
+    
     return 0;
 }
